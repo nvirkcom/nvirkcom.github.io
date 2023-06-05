@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #page-one {
   background: url('http://ftp.scientificlinux.org/linux/scientific/graphics/latest/backgrounds/Edge.of.Space/atomshine-6-night.svg');
 }
