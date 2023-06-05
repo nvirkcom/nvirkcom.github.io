@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta content="initial-scale=1.0, width=device-width" name="viewport" />
     <title>Navpreet Virk</title>
   </head>
   <body>
-    <div class="overlay"></div>
-
-    <div class="container">
-      <div class="intro">
-        Hi
-        <div class="divider"></div>
-        I'm Navpreet
+    <div class="bg-blue-950 relative" id="page-one">
+      <div class="absolute bg-blue-950 h-full opacity-80 w-full z-0"></div>
+      <div class="flex flex-col h-screen max-w-6xl mx-auto">
+        <div class="flex items-center justify-between px-8 py-4 z-10">
+          <a class="bg-white inline-block font-black p-2 rounded text-blue-950 text-lg" href="#">NV</a>
+          <div class="font-medium space-x-8 text-white">
+            <a class="active:opacity-80 hover:opacity-90 transition" href="#projects">Projects</a>
+            <a class="active:opacity-80 hover:opacity-90 transition" href="#footer">Contact</a>
+          </div>
+        </div>
+        <div class="flex flex-1 items-center justify-center px-7 space-y-4 z-10">
+          <div class="space-y-8 text-center">
+            <div class="space-x-2">
+              <a class="active:bg-red-700 bg-red-500 font-medium hover:bg-red-600 px-4 py-2 text-white transition w-40" href="#projects">Browse Projects</a>
+              <a class="active:bg-opacity-20 font-medium hover:bg-opacity-10 hover:bg-white px-4 py-2 text-white transition w-40" href="#footer">Contact Me</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <button>Projects</button>
     </div>
-
-    <div class="skills">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
-      />
-
-      <img
-        src="https://material.angular.io/assets/img/angular-material-logo.svg"
-      />
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
-      />
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-      />
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-      />
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
-      />
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-      />
-
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-      />
+    <div class="bg-neutral-50 text-center px-12 py-6" id="projects">
+      <div class="font-medium text-3xl">Projects</div>
+      <div class="max-w-sm mt-6 mx-auto space-y-6">
+        <div class="bg-white border rounded shadow">
+          <div class="border-b font-medium p-2">Project 1</div>
+          <div class="p-4 text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur temporibus accusamus maxime laboriosam, expedita magni error, ipsam sapiente voluptate tempora labore, perferendis ratione sed ullam dolorem. Minima eveniet eaque enim? <div class="mt-2 space-x-2 text-blue-600 text-sm">
+              <a class="active:text-blue-800 border-blue-50 hover:text-blue-700 hover:border-b transition" href="#">Live Preview</a>
+              <a class="active:text-blue-800 border-blue-50 hover:text-blue-700 hover:border-b transition" href="#">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border rounded shadow">
+          <div class="border-b font-medium p-2">Project 2</div>
+          <div class="p-4 text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur temporibus accusamus maxime laboriosam, expedita magni error, ipsam sapiente voluptate tempora labore, perferendis ratione sed ullam dolorem. Minima eveniet eaque enim? <div class="mt-2 space-x-2 text-blue-600 text-sm">
+              <a class="active:text-blue-800 border-blue-50 hover:text-blue-700 hover:border-b transition" href="#">Live Preview</a>
+              <a class="active:text-blue-800 border-blue-50 hover:text-blue-700 hover:border-b transition" href="#">Source Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border rounded shadow">
+          <div class="border-b font-medium p-2">Project 3</div>
+          <div class="p-4 text-start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur temporibus accusamus maxime laboriosam, expedita magni error, ipsam sapiente voluptate tempora labore, perferendis ratione sed ullam dolorem. Minima eveniet eaque enim? <div class="mt-2 space-x-2 text-blue-600 text-sm">
+              <a class="active:text-blue-800 border-blue-50 hover:text-blue-700 hover:border-b transition" href="#">Live Preview</a>
+              <a class="active:text-blue-800 border-blue-50 hover:text-blue-700 hover:border-b transition" href="#">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer class="bg-blue-950 flex items-center justify-between px-4 py-2 rounded-t text-white" id="footer">
+      <div class="font-medium text-sm">
+        <a href="#">Navpreet Virk</a>
+      </div>
+      <div class="space-x-2 text-xl">
+        <a class="active:opacity-80 hover:opacity-90 transition" href="#">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="active:opacity-80 hover:opacity-90 transition" href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
